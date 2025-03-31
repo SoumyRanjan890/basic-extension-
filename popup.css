@@ -1,0 +1,42 @@
+body {
+    width: 200px;
+    height: 300px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: aliceblue;
+    background: linear-gradient(135deg, #645ac2, #3a2d91); /* Gradient Background */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Pushes button to bottom */
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Button Styling */
+#greet {
+    background: linear-gradient(135deg, #007bff, #0056b3); /* Gradient Blue */
+    color: #fff; 
+    border: none;
+    width: 120px;
+    height: 45px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px; /* Adds some space from the bottom */
+}
+
+/* Hover Effect */
+#greet:hover {
+    background: linear-gradient(135deg, #0056b3, #003580);
+    transform: scale(1.05);
+}
+
+/* Active (Click) Effect */
+#greet:active {
+    transform: scale(0.98);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
